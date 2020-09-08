@@ -95,8 +95,9 @@ $.AdminOreo = {},
                 for (var i = 0; i < res.lstMenuGroup.length; i++) {
                     var menuItemData = '';
                     var group = res.lstMenuGroup[i];
-                    var items = res.lstMenuItem.filter(x => x.id == group.id);
-                    for (let j = 0; j < items.length; j++) {
+                    var items = res.lstMenuItem.filter(x => x.group_id == group.id);
+                    console.log(items);
+                    for (var j = 0; j < items.length; j++) {
                         var item = items[j];
                         menuItemData += `
                                     <li>
@@ -122,6 +123,7 @@ $.AdminOreo = {},
 
                 $('.href-link').bind('click', function() {
                     $('#div-Main').hide();
+                    $('#div-Content').html('');
                     var l_FormType = $(this).data('form-type');
                     var l_Link = $(this).data('href');
                     var l_Title = $(this).html();

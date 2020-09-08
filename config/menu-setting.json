@@ -9,6 +9,17 @@
         "href": "/Searchable-Dropdown-Select-jQuery-Selectstyle/index.html",
         "form_type": "iframe",
         "group_id": 1
+    }, {
+        "id": 2,
+        "name": "Open Street Map 1",
+        "href": "/open-street-map/index.html",
+        "form_type": "iframe",
+        "group_id": 1
+    }, {
+        "id": 3,
+        "name": "Open Street Map 2",
+        "href": "/open-street-map/index2.html",
+        "form_type": "iframe",
+        "group_id": 1
     }]
-
 }
