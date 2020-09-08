@@ -10,6 +10,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+        .olControlLayerSwitcher .layersDiv {
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            background-color: #24242a!important;
+        }
+    </style>
 </head>
 
 <body>
@@ -164,7 +174,11 @@
 
         var markers = [];
         $('#t-body > tr').each(function() {
-            var data = [$(this).find('td')[2].innerText, $(this).find('td')[1].innerText, $(this).find('td')[0].innerText];
+            var data = [
+                $(this).find('td')[2].innerText,
+                $(this).find('td')[1].innerText,
+                $(this).find('td')[0].innerText
+            ];
             markers.push(data);
         });
 
@@ -187,7 +201,8 @@
                 styleArray.push(new OpenLayers.StyleMap({
                     pointRadius: 6,
                     fillColor: colorList[j % colorList.length],
-                    fillOpacity: 0.5
+                    fillOpacity: 0.5,
+                    // graphicName: markers[i][2]
                 }));
                 vectorLayer.push(new OpenLayers.Layer.Vector(layerName[j], {
                     styleMap: styleArray[j]
