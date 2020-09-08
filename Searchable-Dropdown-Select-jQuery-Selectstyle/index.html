@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery selectstyle Plugin Demos</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            margin: 0;
+            padding: 0
+        }
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none
+        }
+        
+        blockquote,
+        q {
+            quotes: none
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: none
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', helvetica, sans-serif;
+        }
+        
+        .container {
+            margin: 150px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        h2 {
+            margin: 30px auto;
+        }
+    </style>
+    <link href="src/selectstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>jQuery selectstyle Plugin Demos</h1>
+        <h2>Light Theme</h2>
+        <select theme="google" width="400" id="searchableDropDownList" placeholder="Select Your Favorite" data-search="true">
+	<option value="https://www.youtube.com/watch?v=32si5cfrCNc">BLACKPINK - 'How You Like That' DANCE PERFORMANCE VIDEO</option>
+	<option value="https://www.youtube.com/watch?v=bAB_nNf8-a0">TypeScript 4.0</option>
+	<option value="https://www.youtube.com/watch?v=2EjxIQXBhlc">Jackson Wang & Galantis - Pretty Please (Official Music Video)</option>
+</select>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="src/selectstyle.js"></script>
+        <script>
+            $(document).ready(function($) {
+                $('#searchableDropDownList').selectstyle({
+                    width: 400,
+                    height: 300,
+                    theme: 'light',
+                    onchange: function(val) {
+                        // console.log(val);
+                        // window.location = val;
+                    }
+                });
+
+                $('.ssli_text').click(function() {
+                    window.location = $(this).closest("li").attr('value');
+                });
+
+                $('.ss_ul > li').click(function() {
+                    window.location = $(this).attr('value');
+                });
+
+                $("#select_style_ul, body").keyup(function(e) {
+                    if (e.key === "Escape") {
+                        if ($('#select_style_ul').length)
+                            $('#select_style_ul').css("display", "none");
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
