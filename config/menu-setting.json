@@ -21,5 +21,29 @@
         "href": "/open-street-map/index2.html",
         "form_type": "iframe",
         "group_id": 1
+    }, {
+        "id": 4,
+        "name": "Cluster",
+        "href": "/mapbox/display-html-clusters-with-custom-properties.html",
+        "form_type": "link",
+        "group_id": 1
+    }, {
+        "id": 5,
+        "name": "Add Marker",
+        "href": "/mapbox/add-marker.html",
+        "form_type": "link",
+        "group_id": 1
+    }, {
+        "id": 6,
+        "name": "TBIG One Marker",
+        "href": "/mapbox/tbig-one-marker.html",
+        "form_type": "link",
+        "group_id": 1
+    }, {
+        "id": 6,
+        "name": "Multiple Markers",
+        "href": "/mapbox/multiple-markers.html",
+        "form_type": "link",
+        "group_id": 1
     }]
 }
