@@ -117,6 +117,11 @@ $(document).ready(function() {
                 //     .setLngLat(l_coordinates)
                 //     .setHTML(l_description)
                 //     .addTo(map);
+
+                var popup = new mapboxgl.Popup({ closeOnClick: false })
+                    .setLngLat(l_coordinates)
+                    .setHTML(l_description)
+                    .addTo(map);
             });
 
             // add marker to map

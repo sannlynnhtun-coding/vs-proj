@@ -308,22 +308,22 @@
                     <div class="card">
                         <h6>Skins</h6>
                         <ul class="choose-skin list-unstyled">
-                            <li data-theme="purple" class="active">
+                            <li data-action="theme" data-theme="purple" class="active">
                                 <div class="purple"></div>
                             </li>
-                            <li data-theme="blue">
+                            <li data-action="theme" data-theme="blue">
                                 <div class="blue"></div>
                             </li>
-                            <li data-theme="cyan">
+                            <li data-action="theme" data-theme="cyan">
                                 <div class="cyan"></div>
                             </li>
-                            <li data-theme="green">
+                            <li data-action="theme" data-theme="green">
                                 <div class="green"></div>
                             </li>
-                            <li data-theme="orange">
+                            <li data-action="theme" data-theme="orange">
                                 <div class="orange"></div>
                             </li>
-                            <li data-theme="blush">
+                            <li data-action="theme" data-theme="blush">
                                 <div class="blush"></div>
                             </li>
                         </ul>
@@ -758,6 +758,21 @@
     <script src="_theme\assets\js\pages\index.js"></script>
 
     <!-- <script src="config\menu.js"></script> -->
+
+    <script>
+        $(document).ready(function() {
+
+        })
+
+        if (localStorage.getItem('theme') != null) {
+            $('body').addClass(localStorage.getItem('theme'));
+        }
+
+        $('[data-action="theme"]').click(function() {
+            var theme = $(this).data('theme');
+            localStorage.setItem("theme", `${theme} theme-${theme}`);
+        });
+    </script>
 </body>
 
 </html>
