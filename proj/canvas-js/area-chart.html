@@ -1,0 +1,74 @@
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="lib/jquery-3.6.0.min.js"></script>
+<script src="lib/canvas-js/jquery.canvasjs.min.js"></script>
+<script>
+    $(document).ready(function () {
+        loadChart();
+    })
+
+    function loadChart() {
+        var options = {
+            theme: "light2",
+            animationEnabled: true,
+            title: {
+                text: "Quaterly Sales by Region - 2016"
+            },
+            axisY: {
+                suffix: "%"
+            },
+            toolTip: {
+                shared: true
+            },
+            data: [
+                {
+                    type: "stackedArea100",
+                    name: "East",
+                    yValueFormatString: "#0.##\"%\"",
+                    showInLegend: "true",
+                    dataPoints: [
+                        { label: "Q1", y: 21 },
+                        { label: "Q2", y: 26 },
+                        { label: "Q3", y: 23 },
+                        { label: "Q4", y: 30 }
+                    ]
+                },
+                {
+                    type: "stackedArea100",
+                    name: "West",
+                    yValueFormatString: "#0.##\"%\"",
+                    showInLegend: "true",
+                    dataPoints: [
+                        { label: "Q1", y: 20 },
+                        { label: "Q2", y: 26 },
+                        { label: "Q3", y: 23 },
+                        { label: "Q4", y: 31 }
+                    ]
+                },
+                {
+                    type: "stackedArea100",
+                    name: "Central",
+                    yValueFormatString: "#0.##\"%\"",
+                    showInLegend: "true",
+                    dataPoints: [
+                        { label: "Q1", y: 20 },
+                        { label: "Q2", y: 26 },
+                        { label: "Q3", y: 25 },
+                        { label: "Q4", y: 30 }
+                    ]
+                },
+                {
+                    type: "stackedArea100",
+                    name: "South",
+                    yValueFormatString: "#0.##\"%\"",
+                    showInLegend: "true",
+                    dataPoints: [
+                        { label: "Q1", y: 18 },
+                        { label: "Q2", y: 25 },
+                        { label: "Q3", y: 30 },
+                        { label: "Q4", y: 26 }
+                    ]
+                }]
+        };
+        $("#chartContainer").CanvasJSChart(options);
+    }
+</script>

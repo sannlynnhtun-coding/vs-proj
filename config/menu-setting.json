@@ -1,49 +1,116 @@
 {
-    "lstMenuGroup": [{
-        "id": 1,
-        "name": "Useful Tools"
-    }],
-    "lstMenuItem": [{
-        "id": 1,
-        "name": "Searchable Dropdown",
-        "href": "/Searchable-Dropdown-Select-jQuery-Selectstyle/index.html",
-        "form_type": "iframe",
-        "group_id": 1
-    }, {
-        "id": 2,
-        "name": "Open Street Map 1",
-        "href": "/open-street-map/index.html",
-        "form_type": "iframe",
-        "group_id": 1
-    }, {
-        "id": 3,
-        "name": "Open Street Map 2",
-        "href": "/open-street-map/index2.html",
-        "form_type": "iframe",
-        "group_id": 1
-    }, {
-        "id": 4,
-        "name": "Cluster",
-        "href": "/mapbox/display-html-clusters-with-custom-properties.html",
-        "form_type": "link",
-        "group_id": 1
-    }, {
-        "id": 5,
-        "name": "Add Marker",
-        "href": "/mapbox/add-marker.html",
-        "form_type": "link",
-        "group_id": 1
-    }, {
-        "id": 6,
-        "name": "TBIG One Marker",
-        "href": "/mapbox/tbig-one-marker.html",
-        "form_type": "link",
-        "group_id": 1
-    }, {
-        "id": 6,
-        "name": "Multiple Markers",
-        "href": "/mapbox/multiple-markers.html",
-        "form_type": "link",
-        "group_id": 1
-    }]
+    "lstMenuGroup": [
+        {
+            "id": 1,
+            "name": "Useful Tools"
+        },
+        {
+            "id": 2,
+            "name": "Canvas JS"
+        },
+        {
+            "id": 3,
+            "name": "Apex Chart"
+        }
+    ],
+    "lstMenuItem": [
+        {
+            "id": 1,
+            "name": "Searchable Dropdown",
+            "href": "/Searchable-Dropdown-Select-jQuery-Selectstyle/index.html",
+            "form_type": "iframe",
+            "group_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Open Street Map 1",
+            "href": "/open-street-map/index.html",
+            "form_type": "iframe",
+            "group_id": 1
+        },
+        {
+            "id": 3,
+            "name": "Open Street Map 2",
+            "href": "/open-street-map/index2.html",
+            "form_type": "iframe",
+            "group_id": 1
+        },
+        {
+            "id": 4,
+            "name": "Cluster",
+            "href": "/mapbox/display-html-clusters-with-custom-properties.html",
+            "form_type": "link",
+            "group_id": 1
+        },
+        {
+            "id": 5,
+            "name": "Add Marker",
+            "href": "/mapbox/add-marker.html",
+            "form_type": "link",
+            "group_id": 1
+        },
+        {
+            "id": 6,
+            "name": "TBIG One Marker",
+            "href": "/mapbox/tbig-one-marker.html",
+            "form_type": "link",
+            "group_id": 1
+        },
+        {
+            "id": 6,
+            "name": "Multiple Markers",
+            "href": "/mapbox/multiple-markers.html",
+            "form_type": "link",
+            "group_id": 1
+        },
+        {
+            "id": 7,
+            "name": "Line Chart",
+            "href": "proj/canvas-js/line-chart.html",
+            "form_type": "link",
+            "group_id": 2
+        },
+        {
+            "id": 8,
+            "name": "Area Chart",
+            "href": "proj/canvas-js/area-chart.html",
+            "form_type": "link",
+            "group_id": 2
+        },
+        {
+            "id": 9,
+            "name": "Bar Chart",
+            "href": "proj/canvas-js/bar-chart.html",
+            "form_type": "link",
+            "group_id": 2
+        },
+        {
+            "id": 10,
+            "name": "Stacked Bar Chart",
+            "href": "proj/canvas-js/stacked-bar-chart.html",
+            "form_type": "link",
+            "group_id": 2
+        },
+        {
+            "id": 10,
+            "name": "Stacked Bar 100 Chart",
+            "href": "proj/canvas-js/stacked-bar-100-chart.html",
+            "form_type": "link",
+            "group_id": 2
+        },
+        {
+            "id": 11,
+            "name": "Pie Chart",
+            "href": "proj/apex-chart/pie-chart.html",
+            "form_type": "link",
+            "group_id": 3
+        },
+        {
+            "id": 12,
+            "name": "Donut Chart",
+            "href": "proj/apex-chart/donut-chart.html",
+            "form_type": "link",
+            "group_id": 3
+        }
+    ]
 }
