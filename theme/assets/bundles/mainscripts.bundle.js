@@ -95,6 +95,7 @@ $.AdminOreo = {},
                 for (var i = 0; i < res.lstMenuGroup.length; i++) {
                     var menuItemData = '';
                     var group = res.lstMenuGroup[i];
+                    if(group.disable == true) continue;
                     var items = res.lstMenuItem.filter(x => x.group_id == group.id);
                     console.log(items);
                     for (var j = 0; j < items.length; j++) {

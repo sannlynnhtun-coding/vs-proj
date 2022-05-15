@@ -2,15 +2,18 @@
     "lstMenuGroup": [
         {
             "id": 1,
-            "name": "Useful Tools"
+            "name": "Useful Tools",
+            "disable": true
         },
         {
             "id": 2,
-            "name": "Canvas JS"
+            "name": "Canvas JS",
+            "disable": false
         },
         {
             "id": 3,
-            "name": "Apex Chart"
+            "name": "Apex Chart",
+            "disable": false
         }
     ],
     "lstMenuItem": [
