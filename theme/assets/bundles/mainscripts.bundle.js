@@ -101,7 +101,7 @@ $.AdminOreo = {},
                         var item = items[j];
                         menuItemData += `
                                     <li>
-                                        <a href="#" class="href-link"
+                                        <a href="javascript:void(0);" class="href-link"
                                         data-group-name="${group.name}"
                                         data-form-type="${item.form_type}" 
                                         data-href="${item.href}">${item.name}</a>
