@@ -1,4 +1,4 @@
-# Javascript Project
+# JavaScript Project
 
 
 ### [Canvas JS Chart](https://canvasjs.com/javascript-charts/)
