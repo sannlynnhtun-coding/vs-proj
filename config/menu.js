@@ -4,7 +4,7 @@ $(function() {
 })
 
 function GetMenuData() {
-    $.getJSON("/vs-proj/config/menu-setting.json", function(res) {
+    $.getJSON(window.projectUrl + "/config/menu-setting.json", function(res) {
         console.table(res.lstMenuGroup);
         console.table(res.lstMenuItem);
         var menuData = '';

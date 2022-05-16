@@ -88,7 +88,7 @@ $.AdminOreo = {},
             var t = this,
                 i = $("body"),
                 r = $(".overlay");
-            $.getJSON("../../../vs-proj/config/menu-setting.json", function (res) {
+            $.getJSON("../../.." + window.projectUrl + "/config/menu-setting.json", function (res) {
                 // console.table(res.lstMenuGroup);
                 // console.table(res.lstMenuItem);
                 var menuData = '';
@@ -106,7 +106,7 @@ $.AdminOreo = {},
                                         <a href="javascript:void(0);" class="href-link"
                                         data-group-name="${group.name}"
                                         data-form-type="${item.form_type}" 
-                                        data-href="${item.href}">${item.name}</a>
+                                        data-href="${window.projectUrl + item.href}">${item.name}</a>
                                     </li>
                                 `;
                     }
